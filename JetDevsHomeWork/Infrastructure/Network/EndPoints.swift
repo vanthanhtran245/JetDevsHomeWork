@@ -8,5 +8,5 @@
 import Foundation
 
 enum EnPoints: String {
-    case login = "/login"
+    case login = "login"
 }

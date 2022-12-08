@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="JetDevsHomeWork" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="iZx-I3-uTw" id="iC7-S1-SBn"/>
+                <outlet property="loadingIndicator" destination="Xtp-kQ-flM" id="H2c-81-KZ5"/>
                 <outlet property="loginButton" destination="YQW-fw-LE8" id="chy-tm-qCu"/>
                 <outlet property="passwordTextField" destination="cX6-Mt-PEq" id="oGS-nE-T5x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -71,19 +72,26 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="8TO-3i-oMl"/>
-                            </connections>
                         </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-kQ-flM">
+                            <rect key="frame" x="10" y="415" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="QDy-Wo-A00"/>
+                                <constraint firstAttribute="width" constant="30" id="ZTf-wq-9xY"/>
+                            </constraints>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="cX6-Mt-PEq" firstAttribute="trailing" secondItem="iZx-I3-uTw" secondAttribute="trailing" id="EG7-hd-6hM"/>
+                        <constraint firstItem="Xtp-kQ-flM" firstAttribute="leading" secondItem="ozQ-J4-u8v" secondAttribute="leading" constant="10" id="Ecg-Yt-Bfs"/>
                         <constraint firstItem="YQW-fw-LE8" firstAttribute="top" secondItem="cX6-Mt-PEq" secondAttribute="bottom" constant="100" id="KNC-wH-AMv"/>
                         <constraint firstItem="iZx-I3-uTw" firstAttribute="leading" secondItem="ozQ-J4-u8v" secondAttribute="leading" constant="-8" id="NE7-0X-ucv"/>
                         <constraint firstItem="cX6-Mt-PEq" firstAttribute="top" secondItem="iZx-I3-uTw" secondAttribute="bottom" constant="30" id="Qcz-a7-8WP"/>
                         <constraint firstItem="nsk-OZ-065" firstAttribute="top" secondItem="ozQ-J4-u8v" secondAttribute="top" constant="50" id="Rg4-gf-ixE"/>
                         <constraint firstItem="nsk-OZ-065" firstAttribute="centerX" secondItem="ozQ-J4-u8v" secondAttribute="centerX" id="S4a-Y2-9LU"/>
+                        <constraint firstItem="Xtp-kQ-flM" firstAttribute="centerY" secondItem="YQW-fw-LE8" secondAttribute="centerY" id="XSp-N7-PHd"/>
                         <constraint firstItem="iZx-I3-uTw" firstAttribute="top" secondItem="nsk-OZ-065" secondAttribute="bottom" constant="50" id="asq-vJ-PcI"/>
                         <constraint firstItem="YQW-fw-LE8" firstAttribute="leading" secondItem="ozQ-J4-u8v" secondAttribute="leading" constant="-8" id="gKy-0k-nT9"/>
                         <constraint firstAttribute="trailing" secondItem="YQW-fw-LE8" secondAttribute="trailing" id="oYJ-sw-hVQ"/>

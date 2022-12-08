@@ -7,15 +7,22 @@
 
 import Foundation
 
-struct LoginResponse: BaseResponse, Codable {
-    typealias T = UserInformation
-    var result: Int
-    var errorMessage: String
-    var data: UserInformation
+// MARK: - LoginResponse
+struct LoginResponse: Codable {
+    let result: Int
+    let errorMessage: String
+    let data: UserInformation
+
+    enum CodingKeys: String, CodingKey {
+        case result
+        case errorMessage = "error_message"
+        case data
+    }
 }
 
+// MARK: - DataClass
 struct UserInformation: Codable {
-    let user: User
+    let user: User?
 }
 
 // MARK: - User
@@ -30,5 +37,22 @@ struct User: Codable {
         case userName = "user_name"
         case userProfileURL = "user_profile_url"
         case createdAt = "created_at"
+    }
+}
+
+extension User {
+    
+    var createdAtDate: Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        dateFormatter.timeZone = TimeZone(identifier: "GMT")
+        let date = dateFormatter.date(from: createdAt)
+        return date
+    }
+    var createDayAgo: Int {
+        guard let createdAtDate = createdAtDate else {
+            return 0
+        }
+        return Calendar.current.dateComponents([.day], from: createdAtDate, to: Date()).day!
     }
 }

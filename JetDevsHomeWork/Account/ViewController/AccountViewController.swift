@@ -26,10 +26,24 @@ class AccountViewController: UIViewController {
 	
 	@IBAction func loginButtonTap(_ sender: UIButton) {
         let loginViewModel = LoginViewModel(useCase: DefaultLoginUseCase.init())
-        let loginViewController = LoginViewController.init(with: loginViewModel)
+        let loginViewController = LoginViewController.init(with: loginViewModel, delegate: self)
         let navigation = UINavigationController(rootViewController: loginViewController)
         navigation.modalPresentationStyle = .fullScreen
         present(navigation, animated: true)
 	}
 	
+}
+
+extension AccountViewController: LoginViewControllerDelegate {
+    
+    func didLoginSuccess(_ viewController: LoginViewController, response: LoginResponse) {
+        viewController.navigationController?.dismiss(animated: true)
+        guard let user = response.data.user else {
+            return
+        }
+        nonLoginView.isHidden = true
+        loginView.isHidden = false
+        nameLabel.text = user.userName
+        daysLabel.text = "Created \(user.createDayAgo) days ago"
+    }
 }

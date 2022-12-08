@@ -63,6 +63,9 @@
 		BCD5E62929420AB800ACD9D1 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62829420AB800ACD9D1 /* ApiRequest.swift */; };
 		BCD5E62B29420B1D00ACD9D1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62A29420B1D00ACD9D1 /* API.swift */; };
 		BCD5E62D29420BFD00ACD9D1 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62C29420BFD00ACD9D1 /* EndPoints.swift */; };
+		BCD5E62F2942264000ACD9D1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62E2942264000ACD9D1 /* Dictionary.swift */; };
+		BCD5E6312942303C00ACD9D1 /* ViewControllerAlerting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E6302942303C00ACD9D1 /* ViewControllerAlerting.swift */; };
+		BCD5E63329423B8100ACD9D1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E63229423B8100ACD9D1 /* ActivityIndicator.swift */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +152,9 @@
 		BCD5E62829420AB800ACD9D1 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		BCD5E62A29420B1D00ACD9D1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BCD5E62C29420BFD00ACD9D1 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		BCD5E62E2942264000ACD9D1 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		BCD5E6302942303C00ACD9D1 /* ViewControllerAlerting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAlerting.swift; sourceTree = "<group>"; };
+		BCD5E63229423B8100ACD9D1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -481,6 +487,7 @@
 		BCD5E61729417EF200ACD9D1 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				BCD5E63229423B8100ACD9D1 /* ActivityIndicator.swift */,
 				BCD5E61829417F0200ACD9D1 /* CustomMaterialTextfield.swift */,
 			);
 			path = CustomViews;
@@ -490,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD5E61B29417F6D00ACD9D1 /* Strings.swift */,
+				BCD5E62E2942264000ACD9D1 /* Dictionary.swift */,
 			);
 			path = Foudation;
 			sourceTree = "<group>";
@@ -500,6 +508,7 @@
 				BCD5E61E2941862E00ACD9D1 /* UIView.swift */,
 				BCD5E6202941AEF100ACD9D1 /* Reactive.swift */,
 				BCD5E6222941C25C00ACD9D1 /* UIColor.swift */,
+				BCD5E6302942303C00ACD9D1 /* ViewControllerAlerting.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -843,9 +852,12 @@
 				4E677C15272B8650006E325E /* Constants.swift in Sources */,
 				BCD5E60D2940C93100ACD9D1 /* ViewModelType.swift in Sources */,
 				BCD5E61C29417F6D00ACD9D1 /* Strings.swift in Sources */,
+				BCD5E62F2942264000ACD9D1 /* Dictionary.swift in Sources */,
 				4E677BCE272B827F006E325E /* AppDelegate.swift in Sources */,
 				BCD5E6122940CD3300ACD9D1 /* DefaultLoginRepository.swift in Sources */,
 				4E677C18272B88A6006E325E /* HomeViewController.swift in Sources */,
+				BCD5E63329423B8100ACD9D1 /* ActivityIndicator.swift in Sources */,
+				BCD5E6312942303C00ACD9D1 /* ViewControllerAlerting.swift in Sources */,
 				BCD5E5FE294088A300ACD9D1 /* BaseResponse.swift in Sources */,
 				BCD5E60B2940C91200ACD9D1 /* ControllerType.swift in Sources */,
 				BCD5E6272942097700ACD9D1 /* HttpMethod.swift in Sources */,
