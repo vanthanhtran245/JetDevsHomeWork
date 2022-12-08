@@ -59,6 +59,10 @@
 		BCD5E61F2941862E00ACD9D1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E61E2941862E00ACD9D1 /* UIView.swift */; };
 		BCD5E6212941AEF100ACD9D1 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E6202941AEF100ACD9D1 /* Reactive.swift */; };
 		BCD5E6232941C25C00ACD9D1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E6222941C25C00ACD9D1 /* UIColor.swift */; };
+		BCD5E6272942097700ACD9D1 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E6262942097700ACD9D1 /* HttpMethod.swift */; };
+		BCD5E62929420AB800ACD9D1 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62829420AB800ACD9D1 /* ApiRequest.swift */; };
+		BCD5E62B29420B1D00ACD9D1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62A29420B1D00ACD9D1 /* API.swift */; };
+		BCD5E62D29420BFD00ACD9D1 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E62C29420BFD00ACD9D1 /* EndPoints.swift */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +145,10 @@
 		BCD5E61E2941862E00ACD9D1 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		BCD5E6202941AEF100ACD9D1 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
 		BCD5E6222941C25C00ACD9D1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BCD5E6262942097700ACD9D1 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		BCD5E62829420AB800ACD9D1 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		BCD5E62A29420B1D00ACD9D1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BCD5E62C29420BFD00ACD9D1 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +208,7 @@
 		4E677BCC272B827F006E325E /* JetDevsHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				BCD5E6242942096900ACD9D1 /* Infrastructure */,
 				BCD5E5F42940861600ACD9D1 /* Domain */,
 				BCD5E5F32940860700ACD9D1 /* Data */,
 				4E677C12272B860A006E325E /* Common */,
@@ -493,6 +502,25 @@
 				BCD5E6222941C25C00ACD9D1 /* UIColor.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BCD5E6242942096900ACD9D1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				BCD5E6252942096D00ACD9D1 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		BCD5E6252942096D00ACD9D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BCD5E6262942097700ACD9D1 /* HttpMethod.swift */,
+				BCD5E62829420AB800ACD9D1 /* ApiRequest.swift */,
+				BCD5E62A29420B1D00ACD9D1 /* API.swift */,
+				BCD5E62C29420BFD00ACD9D1 /* EndPoints.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C87474AC52CF468FB6DCCA19 /* Pods */ = {
@@ -795,14 +823,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD5E62929420AB800ACD9D1 /* ApiRequest.swift in Sources */,
 				4E677BFF272B8319006E325E /* BaseTabBarController.swift in Sources */,
 				4E677C10272B8455006E325E /* AccountViewController.swift in Sources */,
 				BCD5E61F2941862E00ACD9D1 /* UIView.swift in Sources */,
 				BCD5E600294088AA00ACD9D1 /* LoginResponse.swift in Sources */,
 				BCD5E61929417F0200ACD9D1 /* CustomMaterialTextfield.swift in Sources */,
 				BCD5E6212941AEF100ACD9D1 /* Reactive.swift in Sources */,
+				BCD5E62B29420B1D00ACD9D1 /* API.swift in Sources */,
 				BCD5E60F2940CC9000ACD9D1 /* LoginValidateUseCase.swift in Sources */,
 				4E677BD2272B827F006E325E /* ViewController.swift in Sources */,
+				BCD5E62D29420BFD00ACD9D1 /* EndPoints.swift in Sources */,
 				BCD5E6162940CDFA00ACD9D1 /* ValidateRepository.swift in Sources */,
 				4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */,
 				BCD5E60329408B4700ACD9D1 /* LoginRepository.swift in Sources */,
@@ -817,6 +848,7 @@
 				4E677C18272B88A6006E325E /* HomeViewController.swift in Sources */,
 				BCD5E5FE294088A300ACD9D1 /* BaseResponse.swift in Sources */,
 				BCD5E60B2940C91200ACD9D1 /* ControllerType.swift in Sources */,
+				BCD5E6272942097700ACD9D1 /* HttpMethod.swift in Sources */,
 				BCD5E6072940C66B00ACD9D1 /* LoginViewController.swift in Sources */,
 				BCD5E5F62940862500ACD9D1 /* LoginUseCase.swift in Sources */,
 			);

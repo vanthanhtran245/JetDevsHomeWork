@@ -41,10 +41,14 @@ class LoginViewController: UIViewController {
 private extension LoginViewController {
     
     @IBAction func loginAction(_ sender: Any) {
-        
+        guard let emailText = emailTextField.text,
+                let passwordText = passwordTextField.text else {
+            return
+        }
+        viewModel.doLogin(email: emailText, password: passwordText)
     }
     
-    private func setupBindings() {
+    func setupBindings() {
         emailTextField.rx.text.orEmpty.distinctUntilChanged()
             .observeOn(MainScheduler.asyncInstance)
             .bind(onNext: viewModel.inputs.didChange(email:))
@@ -76,7 +80,7 @@ private extension LoginViewController {
                 self.loginButton.isEnabled = enable
         })
         .disposed(by: disposeBag)
-        view.endEditing(true)
+        
         let tapBackground = UITapGestureRecognizer()
         tapBackground.rx.event
             .subscribe(onNext: { [weak self] _ in
@@ -84,6 +88,7 @@ private extension LoginViewController {
             })
             .disposed(by: disposeBag)
         view.addGestureRecognizer(tapBackground)
+        
         emailTextField.addErrorLabel(parentView: emailTextField.superview)
         passwordTextField.addErrorLabel(parentView: passwordTextField.superview)
     }
