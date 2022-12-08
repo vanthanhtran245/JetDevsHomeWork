@@ -43,12 +43,26 @@ class LoginViewController: UIViewController, ViewControllerAlerting {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
         setupBindings()
-        navigationItem.leftBarButtonItem = lefBarButton
+        loginBindings()
     }
 }
 
 private extension LoginViewController {
+    
+    func setUpUI() {
+        navigationItem.leftBarButtonItem = lefBarButton
+        emailTextField.addErrorLabel(parentView: emailTextField.superview)
+        passwordTextField.addErrorLabel(parentView: passwordTextField.superview)
+        let tapBackground = UITapGestureRecognizer()
+        tapBackground.rx.event
+            .subscribe(onNext: { [weak self] _ in
+                self?.view.endEditing(true)
+            })
+            .disposed(by: disposeBag)
+        view.addGestureRecognizer(tapBackground)
+    }
     
     func setupBindings() {
         emailTextField.rx.text.orEmpty.distinctUntilChanged()
@@ -92,19 +106,6 @@ private extension LoginViewController {
                 self.loginButton.isEnabled = enable
             })
             .disposed(by: disposeBag)
-        
-        let tapBackground = UITapGestureRecognizer()
-        tapBackground.rx.event
-            .subscribe(onNext: { [weak self] _ in
-                self?.view.endEditing(true)
-            })
-            .disposed(by: disposeBag)
-        view.addGestureRecognizer(tapBackground)
-        
-        emailTextField.addErrorLabel(parentView: emailTextField.superview)
-        passwordTextField.addErrorLabel(parentView: passwordTextField.superview)
-        
-        loginBindings()
     }
     
     func loginBindings() {

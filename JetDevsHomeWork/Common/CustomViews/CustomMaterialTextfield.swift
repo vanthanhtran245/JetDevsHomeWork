@@ -334,11 +334,11 @@ final class CustomMaterialTextfield: UITextField {
     }
 
     private func editingTextField() {
-        titleLabel.textColor = UIColor.blue.withAlphaComponent(0.8)
-        textFieldView.layer.borderColor = UIColor.blue.withAlphaComponent(0.8).cgColor
+        titleLabel.textColor = UIColor(hex: "28518D")
+        textFieldView.layer.borderColor = UIColor(hex: "28518D").cgColor
         textFieldView.layer.borderWidth = materialState.borderWidth
         textFieldView.backgroundColor = materialState.backgroundColor
-        tintColor = UIColor.blue.withAlphaComponent(0.8)
+        tintColor = UIColor(hex: "28518D")
         if !(self.inputView == nil) {
             becomeFirstResponder()
         }
