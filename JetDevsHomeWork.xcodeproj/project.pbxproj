@@ -39,9 +39,9 @@
 		4E677C4727322FA4006E325E /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E677C3527322FA4006E325E /* Lato-Semibold.ttf */; };
 		4E677C4827322FA5006E325E /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E677C3627322FA4006E325E /* Lato-ThinItalic.ttf */; };
 		4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E677C4B273230E5006E325E /* UIFont+JetDevs.swift */; };
+		6A44990B29434AA50083B123 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A44990A29434AA50083B123 /* LoginViewModel.swift */; };
 		9EC6505DC386FCB04480F4BB /* Pods_JetDevsHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */; };
 		9FBC8F0B168679446BE08275 /* Pods_JetDevsHomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */; };
-		BCD5E5F2294083D600ACD9D1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E5F1294083D600ACD9D1 /* LoginViewModel.swift */; };
 		BCD5E5F62940862500ACD9D1 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E5F52940862400ACD9D1 /* LoginUseCase.swift */; };
 		BCD5E5FE294088A300ACD9D1 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E5FD294088A300ACD9D1 /* BaseResponse.swift */; };
 		BCD5E600294088AA00ACD9D1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E5FF294088AA00ACD9D1 /* LoginResponse.swift */; };
@@ -128,15 +128,15 @@
 		4E677C3527322FA4006E325E /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
 		4E677C3627322FA4006E325E /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4E677C4B273230E5006E325E /* UIFont+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JetDevs.swift"; sourceTree = "<group>"; };
+		6A44990A29434AA50083B123 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC5ABA8B83EB7FC725CD65 /* Pods-JetDevsHomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWorkTests/Pods-JetDevsHomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
-		BCD5E5F1294083D600ACD9D1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ../../../../../../../../Users/er_macbook_237/Documents/LoginViewModel.swift; sourceTree = "<group>"; };
 		BCD5E5F52940862400ACD9D1 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		BCD5E5FD294088A300ACD9D1 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		BCD5E5FF294088AA00ACD9D1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		BCD5E60229408B4700ACD9D1 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
-		BCD5E6052940C66B00ACD9D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = JetDevsHomeWork/Domain/Repository/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		BCD5E6062940C66B00ACD9D1 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = JetDevsHomeWork/Domain/Repository/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
+		BCD5E6052940C66B00ACD9D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = JetDevsHomeWork/Login/ViewController/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		BCD5E6062940C66B00ACD9D1 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = JetDevsHomeWork/Login/ViewController/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
 		BCD5E60A2940C91200ACD9D1 /* ControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
 		BCD5E60C2940C93100ACD9D1 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		BCD5E60E2940CC9000ACD9D1 /* LoginValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidateUseCase.swift; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 				BCD5E6242942096900ACD9D1 /* Infrastructure */,
 				BCD5E5F42940861600ACD9D1 /* Domain */,
 				BCD5E5F32940860700ACD9D1 /* Data */,
+				6A44990729434A750083B123 /* Login */,
 				4E677C12272B860A006E325E /* Common */,
-				4E677C08272B83E4006E325E /* Login */,
 				4E677C01272B8367006E325E /* Account */,
 				4E677C00272B8360006E325E /* Home */,
 				4E677BFD272B82D9006E325E /* TabBar */,
@@ -325,40 +325,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4E677C08272B83E4006E325E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				4E677C0B272B83FA006E325E /* Views */,
-				4E677C0A272B83F5006E325E /* ViewModel */,
-				4E677C09272B83EE006E325E /* ViewController */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		4E677C09272B83EE006E325E /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BCD5E6052940C66B00ACD9D1 /* LoginViewController.swift */,
-				BCD5E6062940C66B00ACD9D1 /* LoginViewController.xib */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		4E677C0A272B83F5006E325E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				BCD5E5F1294083D600ACD9D1 /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4E677C0B272B83FA006E325E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		4E677C12272B860A006E325E /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +385,32 @@
 				4E677C4B273230E5006E325E /* UIFont+JetDevs.swift */,
 			);
 			path = UIFont;
+			sourceTree = "<group>";
+		};
+		6A44990729434A750083B123 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A44990929434A990083B123 /* ViewModel */,
+				6A44990829434A820083B123 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6A44990829434A820083B123 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCD5E6052940C66B00ACD9D1 /* LoginViewController.swift */,
+				BCD5E6062940C66B00ACD9D1 /* LoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6A44990929434A990083B123 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A44990A29434AA50083B123 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BCD5E5F32940860700ACD9D1 /* Data */ = {
@@ -847,9 +839,9 @@
 				4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */,
 				BCD5E60329408B4700ACD9D1 /* LoginRepository.swift in Sources */,
 				BCD5E6142940CD4000ACD9D1 /* DefaultLoginValidateRepository.swift in Sources */,
-				BCD5E5F2294083D600ACD9D1 /* LoginViewModel.swift in Sources */,
 				BCD5E6232941C25C00ACD9D1 /* UIColor.swift in Sources */,
 				4E677C15272B8650006E325E /* Constants.swift in Sources */,
+				6A44990B29434AA50083B123 /* LoginViewModel.swift in Sources */,
 				BCD5E60D2940C93100ACD9D1 /* ViewModelType.swift in Sources */,
 				BCD5E61C29417F6D00ACD9D1 /* Strings.swift in Sources */,
 				BCD5E62F2942264000ACD9D1 /* Dictionary.swift in Sources */,
